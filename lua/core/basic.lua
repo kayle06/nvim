@@ -1,4 +1,5 @@
 local set = vim.o
+vim.keymap.set("n", "<leader>n", ":bn<cr>")
 
 set.encoding = "utf-8"
 set.fileencoding = "utf-8"
