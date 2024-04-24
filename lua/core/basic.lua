@@ -1,8 +1,11 @@
 local set = vim.o
+local opt = vim.opt
 vim.keymap.set("n", "<leader>n", ":bn<cr>")
 
 set.encoding = "utf-8"
 set.fileencoding = "utf-8"
+
+opt.backup = false
 
 set.number = true -- 开启行号
 set.relativenumber = true -- 行号相对路径
@@ -23,8 +26,8 @@ set.hlsearch = true -- 搜索时高亮显示
 set.incsearch = true -- 键入内容时即时搜索
 set.cmdheight = 1 -- 命令行高度
 set.autoread = true -- 当文件被外部程序修改后自动读取内容
--- set.wrap = false -- 不自动换行
-set.timeoutlen = 500 -- keymap或者键盘序列等待时间
+set.wrap = false -- 不自动换行
+set.timeoutlen = 300 -- keymap或者键盘序列等待时间
 set.termguicolors = true -- 使用 GUI 颜色，如果终端支持
 set.pumheight = 16
 set.showtabline = 2 -- 始终显示标签栏
